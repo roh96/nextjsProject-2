@@ -34,7 +34,7 @@ const Logout = () => {
     // window.Kakao.Auth.setAccessToken(res.data.access_token);
     // console.log(Kakao.Auth.getAccessToken());
     // access token 설정
-    router.push("/");
+    router.push("../");
   };
 
   useEffect(() => {

@@ -41,7 +41,7 @@ const Loginok = () => {
 
     // window.location.href = "http://localhost:3000/";
     // access token 설정
-    router.push("/");
+    router.push("../");
   };
 
   useEffect(() => {
