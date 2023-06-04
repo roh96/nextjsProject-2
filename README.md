@@ -17,7 +17,7 @@
 
 ### 🔗 URL
 
-<https://port-0-nextjsproject-3a9t2ble82ehp6.sel3.cloudtype.app/>
+<https://nextjs-project-2.vercel.app//>
 
 ### 🧰 구현 기능
 
