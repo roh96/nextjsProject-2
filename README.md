@@ -1,34 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ShowLink
 
-## Getting Started
+### :memo: 개요
 
-First, run the development server:
+- 공연들의 정보를 알려주고 댓글을 통해 의견을 공유할 수 있는 사이트입니다.
+- 리액트의 컨셉과 유사하지만 조금 더 많은 정보를 담고 있는 kopis api 를 이용해 만든 사이트입니다.
+- SSR 방식의 NEXT를 이용해 CRUD가 가능한 댓글 기능이 있습니다.
+- 댓글을 통해 의견공유나 번개 등을 계획할 수 있지 않을까 하는 생각으로 만들었습니다.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+### ⚙️ 기술
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- NEXT
+- Axios
+- kopis API
+- KAKAO login API
+- maria db
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### 🔗 URL
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+<https://port-0-nextjsproject-3a9t2ble82ehp6.sel3.cloudtype.app/>
 
-## Learn More
+### 🧰 구현 기능
 
-To learn more about Next.js, take a look at the following resources:
+- 현재 공연상태와 공연의 장르를 선택해 각각의 조건에 맞는 공연정보를 알 수 있습니다.
+- 로그인 정보에 따라 로그인메뉴 or 로그아웃, 마이 페이지 메뉴가 나타납니다.
+- 상세 페이지에서 즐겨찾기를 할 수 있고, 로그인 상태가 아닐 시에 로그인 페이지로 넘어갑니다.
+- 즐겨찾기된 항목은 마이 페이지에서 확인 할 수 있습니다.
+- 로그인 시에 댓글을 작성과 삭제가 가능합니다.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 💻 구현 화면
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+| 로그인                                                                                                                          | 목록옵션                                                                                                                        |
+| ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| <img width="100%" src="https://user-images.githubusercontent.com/74894952/233289413-05624098-b0ef-4238-9b27-4f151ae73af5.gif"/> | <img width="100%" src="https://user-images.githubusercontent.com/74894952/233289419-dd541648-0d24-4a0b-9bef-bb6687ebfd52.gif"/> |
 
-## Deploy on Vercel
+| 디테일                                                                                                                          | 즐겨찾기                                                                                                                        |
+| ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| <img width="100%" src="https://user-images.githubusercontent.com/74894952/233289425-78384010-353b-4c0e-924d-f5c4394a7a10.gif"/> | <img width="100%" src="https://user-images.githubusercontent.com/74894952/233289429-ee20c88c-7f4b-4ac0-afd6-a0918e45c3ad.gif"/> |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+| 댓글                                                                                                                            | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <img width="100%" src="https://user-images.githubusercontent.com/74894952/233289435-09e11233-1c76-4b38-84aa-3263fb547778.gif"/> | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### 🤔 느낀 점
+
+- 처음으로 데이터베이스를 통한 CRUD가 가능한 사이트를 만들면서 페이지 이동 시에 어떤 값을 넘겨줘야하는지 전체적인 구조에 대해 생각해 볼 수 있는 시간이었습니다.
+- react프로젝트 때보다 더 좋은 api를 찾았지만 xml 방식으로 밖에 주지 않아 문제가 있었지만, json방식으로 변환하는 방법을 찾아 해결하여 원하는 바를 이룰 수 있었습니다.
+- 전체적으로 react때보다 다양한 경험과 나은 결과물이 나아 만족스러운 시간이었습니다.
