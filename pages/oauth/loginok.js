@@ -5,9 +5,9 @@ import { useRouter } from "next/router";
 
 const Loginok = () => {
   const REST_API_KEY = "0871b8de404d373dcd5244fcb8873bd5";
-  const REDIRECT_URI = "http://localhost:3000/oauth/loginok";
-  // const REDIRECT_URI =
-  // "https://port-0-nextjsproject-3a9t2ble82ehp6.sel3.cloudtype.app/oauth/loginok";
+  // const REDIRECT_URI = "http://localhost:3000/oauth/loginok";
+  const REDIRECT_URI =
+    "https://port-0-nextjsproject2-3a9t2ble82ehp6.sel3.cloudtype.app/oauth/loginok";
   const CLIENT_SECRET = "Wj9Rk5DhtZZAKQVTzmu30AXxtazTqKwD";
 
   const router = useRouter();

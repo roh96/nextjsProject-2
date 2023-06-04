@@ -5,9 +5,9 @@ import { useRouter } from "next/router";
 
 const Logout = () => {
   const REST_API_KEY = "0871b8de404d373dcd5244fcb8873bd5";
-  const LOGOUT_REDIRECT_URI = "http://localhost:3000/oauth/logout";
-  // const LOGOUT_REDIRECT_URI =
-  // "https://port-0-nextjsproject-3a9t2ble82ehp6.sel3.cloudtype.app/oauth/logout";
+  // const LOGOUT_REDIRECT_URI = "http://localhost:3000/oauth/logout";
+  const LOGOUT_REDIRECT_URI =
+    "https://port-0-nextjsproject2-3a9t2ble82ehp6.sel3.cloudtype.app/oauth/logout";
   //   const CLIENT_SECRET = "Wj9Rk5DhtZZAKQVTzmu30AXxtazTqKwD";
 
   const router = useRouter();
