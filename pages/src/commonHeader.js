@@ -5,10 +5,13 @@ const CommonHeader = () => {
   const REST_API_KEY = "0871b8de404d373dcd5244fcb8873bd5";
   // const REDIRECT_URI = "http://localhost:3000/oauth/loginok";
   // const LOGOUT_REDIRECT_URI = "http://localhost:3000/oauth/logout";
-  const REDIRECT_URI =
-    "https://port-0-nextjsproject2-3a9t2ble82ehp6.sel3.cloudtype.app/oauth/loginok";
+  // const REDIRECT_URI =
+  // "https://port-0-nextjsproject2-3a9t2ble82ehp6.sel3.cloudtype.app/oauth/loginok";
+  // const LOGOUT_REDIRECT_URI =
+  // "https://port-0-nextjsproject2-3a9t2ble82ehp6.sel3.cloudtype.app/oauth/logout";
+  const REDIRECT_URI = "https://nextjs-project-2.vercel.app/oauth/loginok";
   const LOGOUT_REDIRECT_URI =
-    "https://port-0-nextjsproject2-3a9t2ble82ehp6.sel3.cloudtype.app/oauth/logout";
+    "https://nextjs-project-2.vercel.app/oauth/logout";
   const KAKAO_AUTH_URL = `https://kauth.kakao.com/oauth/authorize?client_id=${REST_API_KEY}&redirect_uri=${REDIRECT_URI}&response_type=code`;
   const KAKAO_LOGOUT_URL = `https://kauth.kakao.com/oauth/logout?client_id=${REST_API_KEY}&logout_redirect_uri=${LOGOUT_REDIRECT_URI}`;
 
