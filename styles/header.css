@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+em,
+img,
+strong,
+ul,
+li,
+form,
+article,
+footer,
+header {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "LINESeedKR-Bd";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2") format("woff2");
+  font-style: normal;
+}
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 20;
+}
+
+.headerstyle {
+  width: 100vw;
+  text-align: center;
+}
+.headerstyle > div {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+.headerstyle > div a {
+  text-decoration: none;
+}
+.headerstyle > div a a:visited {
+  color: black;
+}
+.headerstyle > div a h1 {
+  color: black;
+  font-size: 4rem;
+  font-family: "LINESeedKR-Bd", sans-serif;
+}
+.headerstyle > div a h1 span {
+  color: #ff1111;
+}
+.headerstyle > div ul {
+  display: flex;
+  align-items: flex-end;
+}
+.headerstyle > div ul li a {
+  display: inline-block;
+  font-family: "LINESeedKR-Bd", sans-serif;
+  color: black;
+}
+.headerstyle > div ul li a:last-child {
+  padding-left: 50px;
+}/*# sourceMappingURL=header.css.map */

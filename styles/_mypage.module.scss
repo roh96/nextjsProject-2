@@ -1,0 +1,58 @@
+.mypagelist {
+  width: 100%;
+  .mypagebox {
+    width: 1170px;
+    margin: 0 auto;
+    border-top: 1px solid #ecedf2;
+    padding-top: 40px;
+    // display: flex;
+    // justify-content: space-between;
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+    .mypagecount {
+      padding: 40px 0 40px;
+    }
+    .mypageImgbox {
+      > ul {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-flow: wrap;
+        // justify-content: space-between;
+        > li {
+          width: 23%;
+          height: 420px;
+          padding-bottom: auto;
+          padding-right: 2.66%;
+          &:nth-child(4n) {
+            padding-right: 0;
+          }
+          a {
+            text-decoration: none;
+            color: black;
+            .imgbox {
+              width: 100%;
+              height: 80%;
+              > img {
+                border-radius: 10px;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+            .Title {
+              padding-top: 10px;
+              font-style: none;
+              font-size: 18px;
+              line-height: 1.4;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+}
